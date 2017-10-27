@@ -23,7 +23,7 @@ set     end="%{\033[0m%}" # This is needed at the end... :(
 # Prompt:
 # user@hostname dir $
 
-set prompt="\n${green}%n${white}@${green}%M${white} ${blue}%~${white}$ ${end}"
+set prompt="\n${green}%n${white}@${green}%m${white} ${blue}%~${white}$ ${end}"
 set autolist
 set color
 set colorcat
@@ -33,7 +33,7 @@ source ~/.bash_aliases
 if ( -e ~/.aliases ) source ~/.aliases
 
 # Various work-related env vars
-setenv EDITOR 'vim'
+setenv EDITOR vim
 unsetenv SOS_TIMEOUT
 setenv PATH ${PATH}:/tools/scripts/queue/bin:/home/kfroncza/bin
 setenv PSF_WRITE_CHUNK_MODE_ON true
