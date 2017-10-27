@@ -5,7 +5,7 @@
 #-------------------
 # Variables
 #-------------------
-dir=~/dotfiles
+dir=~/Projects/dotfiles
 dir_bak=~/dotfiles_bak
 files=".bashrc .bash_profile .bash_prompt .aliases .vimrc"
 
@@ -20,7 +20,7 @@ echo "...done"
 cd $dir
 for file in $files; do
 	echo "Moving old $file and creating new symlink"
-	mv ~/$file ~/$dir_bak
+	mv ~/$file $dir_bak
 	ln -s $dir/$file ~/$file
 done
 
