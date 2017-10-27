@@ -9,7 +9,7 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -10'
 alias memuse='ps -e -o pid,vsz,comm= | sort -n -k 2'
 alias git_clean='git branch | grep -v "master" | xargs git branch -D'
 
-alias update_bash='cd ~/Projects/dotfiles'; git pull; bash gen_symlinks.sh; cd ~; source ~/.bashrc'
+alias update_bash='cd ~/Projects/dotfiles; git pull; bash gen_symlinks.sh; cd ~; source ~/.bashrc'
 
 #=========================================
 # Some aliases used for specific systems
@@ -25,4 +25,4 @@ alias cdhass='cd /mnt/user/appdata/home-assistant'
 #----------------
 # Debian VM
 #----------------
-alias hass_dev='cd ~/home-assistant; source venv/bin/activate
+alias hass_dev='cd ~/home-assistant; source venv/bin/activate'
