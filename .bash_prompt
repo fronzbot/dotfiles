@@ -4,7 +4,7 @@
 
 git_status() {
 	local s='';
-    local bracket=']';
+    local bracket=')';
 	# Check if the current directory is in a Git repository.
 	if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
 
@@ -39,7 +39,7 @@ git_status() {
 		# Get the short symbolic ref.
 		# If HEAD isn’t a symbolic ref, get the short SHA for the latest commit
 		# Otherwise, just give up.
-        [ -n "${s}" ] && s="(${s})";
+        [ -n "${s}" ] && s=" ${s}";
         echo -e "${1}${s}${2}${bracket}";
 	else
 		return;
@@ -48,7 +48,7 @@ git_status() {
 
 git_branch() {
     local branchName='';
-    local bracket='[';
+    local bracket='(';
     if [ $(git rev-parse --is-inside-work-tree &>/dev/null; echo "${?}") == '0' ]; then
         branchName="$(git branch 2>/dev/null | sed -n "s/* \(.*\)/\1 /p")";
         echo -e ${1}${bracket}${2}${branchName};
@@ -107,13 +107,13 @@ PS1="\[\033]0;\W\007\]"; # working directory base name
 #PS1+="\[${bold}\]\n"; # newline
 # Terminal looks like:
 # [user@hostname /full/dir/path][branch]$  
-PS1+="\[${white}\][";
+#PS1+="\[${white}\][";
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h "; # host
 #PS1+="\[${white}\]:";
 PS1+="\[${blue}\]\w"; # working directory full path
-PS1+="\[${white}\]]";
+PS1+="\[${white}\] ";
 PS1+="\$(git_branch \"\[${white}\]\" \"\[${cyan}\]\")"; # Git repo details
 PS1+="\$(git_status \"\[${yellow}\]\" \"\[${white}\]\")"; # Commit status
 # PS1+="\n";
