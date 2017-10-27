@@ -1,6 +1,6 @@
 # Performs initial setup of dot files
-mkdir -r ~/.vim/tmp
-git clone https://github.com/VundleVim/Vundle.vim/git ~/.vim/bundle/Vundle.vim
+mkdir -p ~/.vim/tmp
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 bash gen_symlinks.sh
 cp SolarizedDark.colorscheme ~/.kde/share/apps/konsole
 
