@@ -23,7 +23,7 @@ set     end="%{\033[0m%}" # This is needed at the end... :(
 # Prompt:
 # user@hostname dir $
 
-set prompt="${green}%n${white}@${green}%m${white} ${blue}%~${white}$ ${end}"
+set prompt="${green}%n${white}@${green}%m${white} ${blue}%c3${white}$ ${end}"
 set autolist
 set color
 set colorcat
