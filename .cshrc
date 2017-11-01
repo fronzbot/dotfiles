@@ -39,3 +39,5 @@ setenv PATH ${PATH}:/tools/scripts/queue/bin:/home/kfroncza/bin
 setenv PSF_WRITE_CHUNK_MODE_ON true
 setenv TERM screen-256color
 setenv WORKENV 1
+
+setenv LS_COLORS `cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;"`
