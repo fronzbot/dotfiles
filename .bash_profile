@@ -18,4 +18,5 @@ shopt -s histappend;
 shopt -s cdspell;
 
 # Set ls colors
-export LS_COLORS=$(cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;")
+eval `dircolors -b ~/.dircolors`
+#export LS_COLORS=$(cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;")

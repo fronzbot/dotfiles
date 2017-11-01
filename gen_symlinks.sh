@@ -7,7 +7,7 @@
 #-------------------
 dir=~/Projects/dotfiles
 dir_bak=~/dotfiles_bak
-files=".cshrc .bashrc .bash_profile .bash_prompt .bash_aliases .vimrc .colors"
+files=".cshrc .csh_aliases .bashrc .bash_profile .bash_prompt .bash_aliases .vimrc .dircolors"
 
 
 #-------------------

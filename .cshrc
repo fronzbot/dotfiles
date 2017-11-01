@@ -29,7 +29,7 @@ set color
 set colorcat
 
 # Load aliases file here
-source ~/.bash_aliases
+source ~/.csh_aliases
 if ( -e ~/.aliases ) source ~/.aliases
 
 # Various work-related env vars
@@ -40,4 +40,5 @@ setenv PSF_WRITE_CHUNK_MODE_ON true
 setenv TERM screen-256color
 setenv WORKENV 1
 
-setenv LS_COLORS `cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;"`
+eval `dircolors -c ~/.dircolors`
+#setenv LS_COLORS `cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;"`
