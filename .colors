@@ -1,0 +1,105 @@
+# Human formatted data
+# Basic filesystem items
+no 00               
+fi 00               
+di 01 35            
+ln 00 36            
+pi 40 33            
+so 00 35
+bd 40 33 01
+cd 40 33 01
+or 01 05 37 41      
+mi 01 05 37 41      
+ex 00 91            
+ow 01 34            
+
+# Archives
+*.gz  00 90
+*.bz2 00 90
+*.bz  00 90
+*.tz  00 90
+*.rpm 00 90
+*.rar 00 90
+*.tar 00 90
+*.tgz 00 90
+*.7z  00 90
+*.zip 00 90
+*.iso 00 90
+
+# strikethrough
+*.off 00 9
+*.bak 00 9
+*.old 00 9
+*.ignore 00 9
+
+# Misc docs and web
+*.html   94
+*.htm    94
+*.css    94
+*.scss   94
+*.xml    94
+
+
+# Movies
+*.avi  96
+*.wmv  96
+*.mpeg 96
+*.mpg  96
+*.mov  96
+*.AVI  96
+*.WMV  96
+*.mkv  96
+*.mp4  96
+
+# Images
+*.jpg    96
+*.jpeg   96
+*.png    96
+*.gif    96
+*.JPG    96
+*.PNG    96
+*.svg    96
+*.eps 00 96
+
+# List of all codes:
+# 0    = default color
+# 1    = bold
+# 4    = underlined
+# 5    = flashing text
+# 6    = no change
+# 7    = reverse field
+# 8    = black
+# 9    = strikethrough
+# 10   = no change
+# 30   = light green
+# 31   = red
+# 32   = green
+# 33   = orange
+# 34   = blue
+# 35   = purple
+# 36   = cyan
+# 37   = grey
+# 38   = underline
+# 39   = no change
+# 40   = black background
+# 41   = red background
+# 42   = green background
+# 43   = orange background
+# 44   = blue background
+# 45   = purple background
+# 46   = cyan background
+# 47   = grey background
+# 90   = dark grey
+# 91   = light red
+# 92   = light green
+# 93   = yellow
+# 94   = light blue
+# 95   = light purple
+# 96   = turquoise
+# 100  = dark grey background
+# 101  = light red background
+# 102  = light green background
+# 103  = yellow background
+# 104  = light blue background
+# 105  = light purple background
+# 106  = turquoise background
