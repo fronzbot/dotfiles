@@ -19,4 +19,8 @@ shopt -s cdspell;
 
 # Set ls colors
 eval `dircolors -b ~/.dircolors`
-#export LS_COLORS=$(cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;")
+
+# Set default git editor
+export GIT_EDITOR=vim
+
+export EDITOR=vim
