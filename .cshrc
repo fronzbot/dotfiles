@@ -40,5 +40,4 @@ setenv PSF_WRITE_CHUNK_MODE_ON true
 setenv TERM screen-256color
 setenv WORKENV 1
 
-eval `dircolors -c ~/.dircolors`
-#setenv LS_COLORS `cat ~/.colors | grep '\w' | grep -v '^#' | sed 's/#.\ //' | perl -lane "printf '%s=%s:', shift @F, join ';', @F;"`
+if (-e ~/.dircolors ) eval `dircolors -c ~/.dircolors`
