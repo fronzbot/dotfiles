@@ -18,8 +18,9 @@ shopt -s histappend;
 shopt -s cdspell;
 
 # Set ls colors
-eval `dircolors -b ~/.dircolors`
-
+if [ -f ~/.dircolors ]; then
+    eval `dircolors -b ~/.dircolors`
+fi
 # Set default git editor
 export GIT_EDITOR=vim
 
