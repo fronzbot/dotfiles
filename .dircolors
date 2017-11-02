@@ -94,6 +94,7 @@ EXEC 00;32
 .bak 02;31
 .old 02;31
 .ignore 02;31
+.cdslck 02;31
 
  # archives or compressed (bright red)
 .tar 01;31
