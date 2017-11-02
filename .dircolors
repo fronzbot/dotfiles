@@ -12,6 +12,9 @@
 # slackware version of dircolors) are recognized but ignored.
 # Below are TERM entries, which can be a glob patterns, to match
 # against the TERM environment variable to determine if it is colorizable.
+#
+# NOTE: wildcards don't work for older versions of dircolors (like at my work
+# computer...) so you may need to add in your terminal explicitly
 TERM Eterm
 TERM ansi
 TERM *color*
@@ -31,11 +34,13 @@ TERM mlterm
 TERM putty
 TERM rxvt*
 TERM screen*
+TERM screen-256color
 TERM st
 TERM terminator
 TERM tmux*
 TERM vt100
 TERM xterm*
+TERM xterm-256color
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
 # Attribute codes:
