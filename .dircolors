@@ -12,6 +12,9 @@
 # slackware version of dircolors) are recognized but ignored.
 # Below are TERM entries, which can be a glob patterns, to match
 # against the TERM environment variable to determine if it is colorizable.
+#
+# NOTE: wildcards don't work for older versions of dircolors (like at my work
+# computer...) so you may need to add in your terminal explicitly
 TERM Eterm
 TERM ansi
 TERM *color*
@@ -31,11 +34,13 @@ TERM mlterm
 TERM putty
 TERM rxvt*
 TERM screen*
+TERM screen-256color
 TERM st
 TERM terminator
 TERM tmux*
 TERM vt100
 TERM xterm*
+TERM xterm-256color
 # Below are the color init strings for the basic file types. A color init
 # string consists of one or more of the following numeric codes:
 # Attribute codes:
@@ -48,7 +53,7 @@ TERM xterm*
 #FILE 00 # regular file: use no color at all
 RESET 0 # reset to "normal" color
 DIR 01;35 # directory
-LINK 07;36 # symbolic link. (If you set this to 'target' instead of a
+LINK 04;36 # symbolic link. (If you set this to 'target' instead of a
  # numerical value, the color is as for the file pointed to.)
 MULTIHARDLINK 00 # regular file with more than one link
 FIFO 40;33 # pipe
@@ -89,6 +94,7 @@ EXEC 00;32
 .bak 02;31
 .old 02;31
 .ignore 02;31
+.cdslck 02;31
 
  # archives or compressed (bright red)
 .tar 01;31
