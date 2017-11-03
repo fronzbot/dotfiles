@@ -57,6 +57,7 @@ git_branch() {
     fi;
 }
 
+
 if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors
 	bold=$(tput bold);
@@ -112,7 +113,7 @@ PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h "; # host
 #PS1+="\[${white}\]:";
-PS1+="\[${blue}\]\W"; # working directory full path
+PS1+="\[${blue}\]../\W"; # working directory full path
 PS1+="\[${white}\] ";
 PS1+="\$(git_branch \"\[${white}\]\" \"\[${cyan}\]\")"; # Git repo details
 PS1+="\$(git_status \"\[${yellow}\]\" \"\[${white}\]\")"; # Commit status
