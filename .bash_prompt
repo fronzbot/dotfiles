@@ -2,6 +2,8 @@
 
 # From htps://github.com/empeee/dotfiles
 
+PROMPT_DIRTRIM=2
+
 git_status() {
 	local s='';
     local bracket=')';
@@ -57,6 +59,13 @@ git_branch() {
     fi;
 }
 
+trimmed_dir() {
+    if [ $(pwd | grep -o '/' | wc -l) -gt 3 ]; then
+        pwd | cut -d'/' -f1-3 | xargs -I{} echo {}"/../${PWD##*/}"
+    else
+        pwd
+    fi
+}
 
 if tput setaf 1 &> /dev/null; then
 	tput sgr0; # reset colors
@@ -113,7 +122,7 @@ PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\]@";
 PS1+="\[${hostStyle}\]\h "; # host
 #PS1+="\[${white}\]:";
-PS1+="\[${blue}\]../\W"; # working directory full path
+PS1+="\[${blue}\]\w"; # working directory full path
 PS1+="\[${white}\] ";
 PS1+="\$(git_branch \"\[${white}\]\" \"\[${cyan}\]\")"; # Git repo details
 PS1+="\$(git_status \"\[${yellow}\]\" \"\[${white}\]\")"; # Commit status
