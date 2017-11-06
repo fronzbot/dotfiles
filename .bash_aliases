@@ -21,6 +21,7 @@ alias update_bash='cd ~/Projects/dotfiles; git pull; bash gen_symlinks.sh; cd ~;
 alias ipfail='more /mnt/user/appdata/letsencrypt/log/fail2ban/fail2ban.log | grep "Ban"'
 alias cdplex='cd /mnt/user/appdata/plex'
 alias cdhass='cd /mnt/user/appdata/home-assistant'
+alias docker_cleanup='docker rmi -f $(docker images | grep "<none>" | awk "{print \$3}")'
 
 #----------------
 # Debian VM
