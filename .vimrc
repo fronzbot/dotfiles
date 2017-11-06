@@ -1,5 +1,4 @@
 " .vimrc
-" Mark Pude
 
 " Automatic reloading of .vimrc on save
 autocmd! bufwritepost .vimrc source %
@@ -74,6 +73,7 @@ nmap <leader>bl :ls<CR>
 syntax on
 set background=dark
 color solarized
+nmap <leader>m :color desert<CR>
 let python_highlight_all=1
 
 " Show line numbers
@@ -102,3 +102,14 @@ endif
 set backupdir=~/.vim/tmp//
 set directory=~/.vim/tmp//
 set undodir=~/.vim/tmp//
+
+" Syntastic
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
+
+" Highlight settings
+set hlsearch
+noremap <F4> :set hlsearch! hlsearch?<CR>
+noremap <CR> :nohlsearch<CR><CR>
