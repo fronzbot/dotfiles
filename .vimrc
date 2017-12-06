@@ -27,6 +27,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'lifepillar/vim-solarized8'
 if workenv==0
     Plugin 'tmhedberg/SimpylFold'
     Plugin 'nvie/vim-flake8'
@@ -73,7 +74,7 @@ nmap <leader>bl :ls<CR>
 syntax on
 set background=dark
 color solarized
-nmap <leader>m :color desert<CR>
+nmap <leader>m :color solarized8<CR>
 let python_highlight_all=1
 
 " Show line numbers
