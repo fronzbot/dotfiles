@@ -27,3 +27,4 @@ alias docker_cleanup='docker rmi -f $(docker images | grep "<none>" | awk "{prin
 # Debian VM
 #----------------
 alias hass_dev='cd ~/home-assistant; source venv/bin/activate'
+alias mount_shares='sudo mkdir /share; sudo mount -t 9p -o trans=virtio /shares /share'
