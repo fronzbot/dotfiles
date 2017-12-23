@@ -28,3 +28,4 @@ alias docker_cleanup='docker rmi -f $(docker images | grep "<none>" | awk "{prin
 #----------------
 alias hass_dev='cd ~/home-assistant; source venv/bin/activate'
 alias mount_shares='sudo mount -t 9p -o trans=virtio /unraid_shares /mnt/shares; sudo mount -t 9p -o trans=virtio /unraid_disks /mnt/disks'
+alias vncstart='x11vnc -rfbauth /home/kevin/.vnc/passwd'
