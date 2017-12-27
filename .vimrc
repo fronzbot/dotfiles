@@ -3,6 +3,8 @@
 " Automatic reloading of .vimrc on save
 autocmd! bufwritepost .vimrc source %
 
+set shortmess+=A
+
 " Set GUI font to something powerline(airline) compatible when on windows
 if has('win32')
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h11
