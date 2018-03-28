@@ -25,3 +25,6 @@ fi
 export GIT_EDITOR=vim
 
 export EDITOR=vim
+
+# Disable creation of __pycache__
+export PYTHONDONTWRITEBYTECODE=1
