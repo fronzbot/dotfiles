@@ -5,6 +5,35 @@ General instructions for using these dotfiles
 
 Influenced heavily by https://github.com/empeee/dotfiles
 
+Easy Setup
+----------
+First, clone the dotfiles into your home directory under ``~/Projects/`` like so:
+
+.. code:: bash
+
+    $ mkdir ~/Projects
+    $ cd ~/Projects
+    $ git clone https://github.com/fronzbot/dotfiles.git
+
+Run the ``setup.sh`` script to set up vim and create symlinks. To use the solarized color scheme, see the **Konsole** section below.
+
+.. code:: bash
+
+    $ cd dotfiles
+    $ bash setup.sh
+
+
+Manual Setup
+============
+
+Clone the repo with the steps above, but this time don't run ``setup.sh``.  Instead, we'll just generate teh symlinks and you can manually install ``Vundle.vim`` and stuff like that.
+
+.. code:: bash
+
+    $ cd ~/Projects/dotfiles
+    $ bash gen_symlinks.sh
+
+
 Vim
 ----
 First, make sure you can create the ``~/.vim/tmp`` directory for history and swap files.  After that, install ``Vundle`` to handle plugins:
