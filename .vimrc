@@ -116,3 +116,8 @@ let g:syntastic_aggregate_errors = 1
 set hlsearch
 noremap <F4> :set hlsearch! hlsearch?<CR>
 noremap <CR> :nohlsearch<CR><CR>
+
+if &term =~ '256color'
+    " disable background color erase
+    set t_ut=
+endif
