@@ -11,8 +11,8 @@ alias git_clean='git branch | grep -v "master" | xargs git branch -D'
 
 alias update_bash='cd ~/Projects/dotfiles; git pull; bash gen_symlinks.sh; cd ~; source ~/.bashrc'
 
-alias txn='tmux new -s'
-alias txa='tmux attach -t'
+alias tmxn='tmux new -s'
+alias tmxa='tmux attach -t'
 alias lsx='tmux ls'
 alias tkill='tmux kill-session -t'
 
