@@ -75,7 +75,7 @@ nmap <leader>bl :ls<CR>
 " Other Settings
 syntax on
 set background=dark
-color solarized
+color monokai 
 nmap <leader>m :color solarized8<CR>
 let python_highlight_all=1
 
