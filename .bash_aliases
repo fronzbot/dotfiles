@@ -27,6 +27,8 @@ alias ipfail='more /mnt/user/appdata/letsencrypt/log/fail2ban/fail2ban.log | gre
 alias cdplex='cd /mnt/user/appdata/plex'
 alias cdhass='cd /mnt/user/appdata/home-assistant'
 alias docker_cleanup='docker rmi -f $(docker images | grep "<none>" | awk "{print \$3}")'
+alias userfiles='lsof | grep mnt'
+alias mntclean='fuser -km /mnt/user'
 
 #----------------
 # Debian VM
