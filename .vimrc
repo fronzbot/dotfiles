@@ -73,6 +73,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>bl :ls<CR>
 
 " Other Settings
+set termguicolors
 syntax on
 set background=dark
 color molokai 
