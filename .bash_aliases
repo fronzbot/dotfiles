@@ -31,8 +31,11 @@ alias userfiles='lsof | grep mnt'
 alias mntclean='fuser -km /mnt/user'
 
 #----------------
-# Debian VM
+# Linux VM
 #----------------
-alias hass_dev='cd ~/home-assistant; source venv/bin/activate'
+alias pyvenv='python3 -m virtualenv'
+alias hass_dev='source ~/venv/hass/bin/activate; cd ~/Projects/home-assistant'
+alias blink_dev='source ~/venv/blinkpy/bin/activate; cd ~/Projects/blinkpy'
 alias mount_shares='sudo mount -t 9p -o trans=virtio /unraid_shares /mnt/shares; sudo mount -t 9p -o trans=virtio /unraid_disks /mnt/disks'
 alias vncstart='x11vnc -rfbauth /home/kevin/.vnc/passwd'
+
