@@ -26,3 +26,8 @@ alias cdhass 'cd /mnt/user/appdata/home-assistant'
 # Debian VM
 #----------------
 alias hass_dev 'cd ~/home-assistant; source venv/bin/activate'
+
+#-----------------
+# Work
+#-----------------
+alias rmlck 'find . -name "*.cdslck*" -exec rm "{}" \;'
