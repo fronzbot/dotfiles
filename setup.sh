@@ -9,6 +9,6 @@ cp Molokai.colorscheme ~/.local/share/konsole/
 cp molokai.vim ~/.vim/colors/molokai.vim
 cp monokai.vim ~/.vim/colors/monokai.vim
 
+vim -c 'PluginInstall' -c 'qa!'
+
 echo "Run command: source ~/.bashrc or source ~/.cshrc depending on need."
-echo "Open Konsole, select Settings > Manage Profiles > Edit Profile > Appearance and select Molokai theme"
-echo "Run vim, type :PluginInstall to get plugins. Restart vim"
