@@ -32,7 +32,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'lifepillar/vim-solarized8'
 if workenv==0
     Plugin 'tmhedberg/SimpylFold'
-    Plugin 'nvie/vim-flake8'
+    Plugin 'psf/black'
 endif
 
 call vundle#end()
