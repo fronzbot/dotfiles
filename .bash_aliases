@@ -33,9 +33,10 @@ alias mntclean='fuser -km /mnt/user'
 #----------------
 # Linux VM
 #----------------
+alias mount_home='sudo mount -t 9p -o trans=virtio "unixhome" /mnt/unixhome'
 alias pyvenv='python3 -m virtualenv'
-alias hass_dev='source ~/venv/hass/bin/activate; cd ~/Projects/home-assistant'
-alias blink_dev='source ~/venv/blinkpy/bin/activate; cd ~/Projects/blinkpy'
+alias hass_dev='source ~/venv/hass/core/bin/activate; cd ~/Projects/home-assistant/core'
+alias blink_dev='source ~/venv/blinkpy/bin/activate; cd ~/Projects/share/blinkpy'
 alias mount_shares='sudo mount -t 9p -o trans=virtio /unraid_shares /mnt/shares; sudo mount -t 9p -o trans=virtio /unraid_disks /mnt/disks'
 alias vncstart='x11vnc -rfbauth /home/kevin/.vnc/passwd'
-
+alias hass_clean='rm ~/.homeassistant/.storage/core.config_entries; rm ~/.homeassistant/.storage/core.entity_registry; hass'
