@@ -10,7 +10,7 @@ dir_bak=~/dotfiles_bak
 files=".cshrc .csh_aliases .bashrc .bash_profile .bash_prompt .bash_aliases .vimrc .dircolors .tmux.conf"
 prepend=""
 if [ $1 = "mac" ]; then
-  files=".zshrc .zsh_aliases .zsh_profile .zsh_prompt .vimrc .dircolors .tmux.conf"
+  files=".zshrc .zsh_aliases .zsh_profile .zsh_prompt .vimrc .tmux.conf"
 fi
 #-------------------
 # Create backup dir
