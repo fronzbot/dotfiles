@@ -24,7 +24,8 @@ Run the ``setup.sh`` script to set up vim and create symlinks. To use the solari
 
 For MacOS, use the "mac" argument to the setup script:
 
-.. code:: zsh
+.. code:: bash
+
     % bash setup.sh mac
 
 
