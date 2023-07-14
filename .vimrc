@@ -30,6 +30,7 @@ Plugin 'dense-analysis/ale'
 Plugin 'tpope/vim-fugitive'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'lifepillar/vim-solarized8'
+Plugin 'cespare/vim-toml'
 if workenv==0
     Plugin 'tmhedberg/SimpylFold'
     Plugin 'psf/black'
