@@ -1,5 +1,6 @@
 alias ls='ls --color=auto'
 alias lsa='ls -lah'
+alias python='python3'
 
 alias grep='grep --color=auto'
 
@@ -11,3 +12,12 @@ alias git_clean='git branch | grep -v "master" | xargs git branch -D'
 
 alias update_bash='cd ~/Projects/dotfiles; git pull; bash gen_symlinks.sh; cd ~; source ~/.zshrc'
 
+alias disable_acc='defaults write .GlobalPreferences com.apple.mouse.scaling -1'
+
+alias sys='conda activate sys'
+alias base='conda activate base'
+
+alias bklyn_cli='python -m venv ~/venv/bklyn_cli; source ~/venv/bklyn_cli/bin/activate; cd ~/Projects/bklyn_cli'
+
+alias tmxn='tmux new -s'
+alias tmxa='tmux attach -t'
